@@ -11,7 +11,7 @@ eggroll.onload=function(){
     },10)
 }
 
-setTimeout("delay()",2000 );
+setTimeout("delay()",1500 );
 let items_chocolate=document.getElementById('items_chocolate');
 let single=document.getElementById('single');  
 let gift=document.getElementById('gift');
@@ -28,11 +28,17 @@ function delay(){
     number.innerHTML="<div><p><b>數量</b></p></div>";
     input_1.innerHTML="<div></div>";
     input_2.innerHTML="<div></div>";
-    finish.innerHTML="<div><p><b><a href='https://s3839083.github.io/HW2/first.html'>完成購物</a></b></p></div>";
+    finish.innerHTML="<div><p><b><a href=#>完成購物</a></b></p></div>";
 }
-let succeed = document.getElementById('succeed'), time, i=0;
-finish.click=function(){
+let succeed = document.getElementById('succeed');
+finish.onclick=function(){
     succeed.style.backgroundImage="url('HW1/下單01.png')";
+    succeed.style.height='500px';
+    succeed.style.width='450px';
+    succeed.style.top='-40px';
+    succeed.style.left='90px';
+    succeed.style.backgroundSize = "cover";
+    location.href="https://s3839083.github.io/HW2/first.html";
 }
 // let succeed = document.getElementById('succeed'), time, i=0;
 // finish.click=function(){
