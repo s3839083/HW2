@@ -11,7 +11,7 @@ eggroll.onload=function(){
     },10)
 }
 
-setTimeout("delay()",3000 );
+setTimeout("delay()",2000 );
 let items_chocolate=document.getElementById('items_chocolate');
 let single=document.getElementById('single');  
 let gift=document.getElementById('gift');
